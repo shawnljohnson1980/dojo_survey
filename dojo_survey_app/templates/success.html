@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Success- Dojo Survey</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+
+<body class="background-color" style="color: rgb(44,62,80);">
+    <div class="container bg-secondary">
+        <div class="form-group text-right">
+            <a class="btn btn-secondary text-right text-white-50 border rounded border-white shadow" href="/">Close
+            </a>
+        </div>
+        <h2 class="text-white-50">Submitted info...</h2>
+
+        <div class="row row-cols-2 p-3">
+            <div class="col-xl-3 offset-xl-3" style="color: rgb(216,221,227);">
+                <p>Dojo Location:</p>
+            </div>
+            <div class="col b-c">
+                <p class="text-white-50">{{location}}</p>
+            </div>
+        </div>
+        <div class="row row-cols-2 p-3">
+            <div class="col-xl-3 offset-xl-3" style="color: rgb(216,221,227);">
+                <p>Favorite language(s):</p>
+            </div>
+            <div class="col b-c">
+                <p class="text-white-50">{{language}}</p>
+            </div>
+        </div>
+        <div class="row row-cols-2 p-3">
+            <div class="col-xl-3 offset-xl-3" style="color: rgb(216,221,227);">
+                <P>Messages:</P>
+            </div>
+            <div class="col b-c">
+                <p class="text-white-50">{{message}}</p>
+            </div>
+        </div>
+        <div class="row row-cols-2 p-3">
+            <div class="col-xl-3 offset-xl-3" style="color: rgb(216,221,227);">
+                <p>Would you Refer:</p>
+            </div>
+            <div class="col b-c" style="color: rgb(216,221,227);">
+                <p clas='text-white-50'>{{refer}}</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    </div>
+    </div>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+</body>
+
+</html>
